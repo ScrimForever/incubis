@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "incubis"
+version = "0.1.0"
+description = "Sistema para incubadoras"
+authors = ["Thiago Salgado <thiago.salgado.monteiro@gmail.com>"]
+license = "GNU 3"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
