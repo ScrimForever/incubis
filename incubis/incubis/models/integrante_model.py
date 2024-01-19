@@ -9,8 +9,8 @@ class Integrante(Base):
     integrante_experiencia = Column(Text, nullable=True)
 
     # Foreign Keys
-    equipe_fk = ForeignKey("equipe.equipe_id")
-    formacao_academica_fk = ForeignKey("formacao_academica.formacao_academica_id")
+    equipe_fk = ForeignKey("equipe.equipe_id", nullable=True)
+    formacao_academica_fk = ForeignKey("formacao_academica.formacao_academica_id", nullable=True)
 
     def __str__(self):
         return self.integrante_nome
